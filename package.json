@@ -1,0 +1,24 @@
+{
+  "name": "react-step-by-step",
+  "version": "0.0.1",
+  "description": "Show project for my mentees as an easy reminder what we've done on the lessons",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayacode/react-step-by-step.git"
+  },
+  "keywords": [
+    "learn",
+    "react",
+    "project"
+  ],
+  "author": "Maja Miarecki <maja.miarecki@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mayacode/react-step-by-step/issues"
+  },
+  "homepage": "https://github.com/mayacode/react-step-by-step#readme"
+}
