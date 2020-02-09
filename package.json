@@ -20,5 +20,17 @@
   "bugs": {
     "url": "https://github.com/mayacode/react-step-by-step/issues"
   },
-  "homepage": "https://github.com/mayacode/react-step-by-step#readme"
+  "homepage": "https://github.com/mayacode/react-step-by-step#readme",
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "install": "^0.13.0",
+    "npm": "^6.13.7",
+    "webpack": "^4.41.5",
+    "webpack-dev-server": "^3.10.3"
+  }
 }
