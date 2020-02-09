@@ -4,7 +4,8 @@
   "description": "Show project for my mentees as an easy reminder what we've done on the lessons",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-client-run": "webpack-dev-server --config client/webpack.dev.config.js"
   },
   "repository": {
     "type": "git",
@@ -27,10 +28,15 @@
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
     "@babel/preset-react": "^7.8.3",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.6",
+    "html-webpack-plugin": "^3.2.0",
     "install": "^0.13.0",
     "npm": "^6.13.7",
     "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.3"
   }
 }
