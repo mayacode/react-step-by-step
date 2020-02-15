@@ -29,3 +29,6 @@ If it doesn't happen open in browser:
 
 ## Lesson 4 - component
 [lesson4.md](lesson4.md)
+
+## Lesson 5 - props part 1 - style
+[lesson5.md](lesson5.md)
