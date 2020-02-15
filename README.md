@@ -26,3 +26,6 @@ If it doesn't happen open in browser:
 
 ## Lesson 3 - webpack dev server
 [lesson3.md](lesson3.md)
+
+## Lesson 4 - component
+[lesson4.md](lesson4.md)
