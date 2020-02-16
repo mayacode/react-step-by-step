@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev-client-run": "webpack-dev-server --config client/webpack.dev.config.js"
+    "dev-client-run": "webpack-dev-server --config client/webpack.dev.config.js",
+    "dev-client-build": "webpack --config client/webpack.dev.config.js"
   },
   "repository": {
     "type": "git",
