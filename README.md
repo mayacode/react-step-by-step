@@ -32,3 +32,9 @@ If it doesn't happen open in browser:
 
 ## Lesson 5 - props part 1 - style
 [lesson5.md](lesson5.md)
+
+## Lesson 6 - build
+[lesson6.md](lesson6.md)
+
+## Lesson 7 - static code analysis - eslint
+[lesson7.md](lesson7.md)
