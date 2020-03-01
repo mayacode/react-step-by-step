@@ -8,8 +8,14 @@ export function App() {
   return (
     <div style={{ width: '1400px', margin: '0 auto' }}>
       <BrowserRouter>
-          <Header />
-          <h1>Hello World!!</h1>
+        <Switch>
+          <Route path="/:subpage?">
+            <Header />
+            <Route path="/" exact><h1>Hello world!</h1></Route>
+            <Route path="/about">About</Route>
+            <Route path="/contact">Contact</Route>
+          </Route>
+        </Switch>
       </BrowserRouter>
     </div>
   );
