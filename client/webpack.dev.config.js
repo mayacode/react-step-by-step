@@ -1,15 +1,17 @@
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
+// eslint-disable-next-line no-undef
 const client = path.resolve(__dirname, '');
-const dist = path.resolve(__dirname, '../dist/client');
+const dist = path.resolve(client, '../dist/client');
 console.log(client);
 console.log(dist);
 
+// eslint-disable-next-line no-undef
 module.exports = {
   context: client,
   entry: {
-    main: path.join(__dirname, 'src/index.js'),
+    main: path.join(client, 'src/index.js'),
   },
   mode: 'development',
   output: {
@@ -30,6 +32,7 @@ module.exports = {
     ]
   },
   devServer: {
+    historyApiFallback: true,
     contentBase: dist,
     clientLogLevel: 'debug',
     hot: true,
@@ -37,6 +40,6 @@ module.exports = {
     port: 8081
   },
   plugins: [
-    new HtmlWebpackPlugin({ template: path.join(__dirname, 'static/index.html') })
+    new HtmlWebpackPlugin({ template: path.join(client, 'static/index.html') })
   ]
 };
