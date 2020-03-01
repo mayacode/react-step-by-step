@@ -38,3 +38,6 @@ If it doesn't happen open in browser:
 
 ## Lesson 7 - static code analysis - eslint
 [lesson7.md](lesson7.md)
+
+## Lesson 8 - routing in application
+[lesson8.md](lesson8.md)

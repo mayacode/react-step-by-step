@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useRouteMatch } from 'react-router-dom';
+import { NavLink, useRouteMatch } from 'react-router-dom';
 
 export function Header() {
   const { params: { subpage } } = useRouteMatch();
@@ -19,13 +19,13 @@ export function Header() {
   return (
     <ul style={{ listStyle: 'none', display: 'flex', justifyContent: 'space-between' }}>
       <li>
-        <Link style={!subpage ? activeStyle : notActiveStyle} to="/">Home</Link>
+        <NavLink style={notActiveStyle} activeStyle={activeStyle} exact to="/">Home</NavLink>
       </li>
       <li>
-        {subpage !== 'about' ? <Link style={notActiveStyle} to="/about">Other page</Link> : <>Other page</>}
+        <NavLink style={notActiveStyle} activeStyle={activeStyle} to="/about">Other page</NavLink>
       </li>
       <li>
-        <Link style={notActiveStyle} to="/contact">Other page 2</Link>
+        <NavLink style={notActiveStyle} activeStyle={activeStyle} to="/contact">Other page 2</NavLink>
       </li>
     </ul>
   );
