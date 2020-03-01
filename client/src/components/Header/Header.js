@@ -1,16 +1,31 @@
 import React from 'react';
+import { NavLink, useRouteMatch } from 'react-router-dom';
 
 export function Header() {
+  const { params: { subpage } } = useRouteMatch();
+  const activeStyle = {
+    textDecoration: 'none',
+    color: '#000000',
+    fontWeight: 'normal',
+    cursor: 'auto'
+  };
+  const notActiveStyle = {
+    textDecoration: 'underline',
+    color: 'brown',
+    fontWeight: 'bold',
+    cursor: 'pointer'
+  };
+  console.log('subpage', subpage);
   return (
     <ul style={{ listStyle: 'none', display: 'flex', justifyContent: 'space-between' }}>
       <li>
-        Home
+        <NavLink style={notActiveStyle} activeStyle={activeStyle} exact to="/">Home</NavLink>
       </li>
       <li>
-        Other page
+        <NavLink style={notActiveStyle} activeStyle={activeStyle} to="/about">Other page</NavLink>
       </li>
       <li>
-        Other page 2
+        <NavLink style={notActiveStyle} activeStyle={activeStyle} to="/contact">Other page 2</NavLink>
       </li>
     </ul>
   );
