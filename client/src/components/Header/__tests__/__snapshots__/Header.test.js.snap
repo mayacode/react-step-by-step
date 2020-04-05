@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should match snapshot 1`] = `
+<ul
+  style={
+    Object {
+      "display": "flex",
+      "justifyContent": "space-between",
+      "listStyle": "none",
+    }
+  }
+>
+  <li>
+    <NavLink
+      activeStyle={
+        Object {
+          "color": "#000000",
+          "cursor": "auto",
+          "fontWeight": "normal",
+          "textDecoration": "none",
+        }
+      }
+      exact={true}
+      style={
+        Object {
+          "color": "brown",
+          "cursor": "pointer",
+          "fontWeight": "bold",
+          "textDecoration": "underline",
+        }
+      }
+      to="/"
+    >
+      Home
+    </NavLink>
+  </li>
+  <li>
+    <NavLink
+      activeStyle={
+        Object {
+          "color": "#000000",
+          "cursor": "auto",
+          "fontWeight": "normal",
+          "textDecoration": "none",
+        }
+      }
+      style={
+        Object {
+          "color": "brown",
+          "cursor": "pointer",
+          "fontWeight": "bold",
+          "textDecoration": "underline",
+        }
+      }
+      to="/about"
+    >
+      Other page
+    </NavLink>
+  </li>
+  <li>
+    <NavLink
+      activeStyle={
+        Object {
+          "color": "#000000",
+          "cursor": "auto",
+          "fontWeight": "normal",
+          "textDecoration": "none",
+        }
+      }
+      style={
+        Object {
+          "color": "brown",
+          "cursor": "pointer",
+          "fontWeight": "bold",
+          "textDecoration": "underline",
+        }
+      }
+      to="/contact"
+    >
+      Other page 2
+    </NavLink>
+  </li>
+</ul>
+`;
