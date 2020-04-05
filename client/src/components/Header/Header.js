@@ -1,8 +1,7 @@
 import React from 'react';
-import { NavLink, useRouteMatch } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export function Header() {
-  const { params: { subpage } } = useRouteMatch();
   const activeStyle = {
     textDecoration: 'none',
     color: '#000000',
@@ -15,7 +14,7 @@ export function Header() {
     fontWeight: 'bold',
     cursor: 'pointer'
   };
-  console.log('subpage', subpage);
+
   return (
     <ul style={{ listStyle: 'none', display: 'flex', justifyContent: 'space-between' }}>
       <li>
