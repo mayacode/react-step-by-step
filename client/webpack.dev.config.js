@@ -1,11 +1,8 @@
-var path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-// eslint-disable-next-line no-undef
 const client = path.resolve(__dirname, '');
 const dist = path.resolve(client, '../dist/client');
-console.log(client);
-console.log(dist);
 
 // eslint-disable-next-line no-undef
 module.exports = {

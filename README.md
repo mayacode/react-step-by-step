@@ -41,3 +41,6 @@ If it doesn't happen open in browser:
 
 ## Lesson 8 - routing in application
 [lesson8.md](lesson8.md)
+
+## Lesson 9 - server side
+[lesson9.md](lesson9.md)
