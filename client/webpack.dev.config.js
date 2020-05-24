@@ -1,11 +1,8 @@
-var path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-// eslint-disable-next-line no-undef
 const client = path.resolve(__dirname, '');
 const dist = path.resolve(client, '../dist/client');
-console.log(client);
-console.log(dist);
 
 // eslint-disable-next-line no-undef
 module.exports = {
@@ -37,7 +34,13 @@ module.exports = {
     clientLogLevel: 'debug',
     hot: true,
     open: 'google-chrome',
-    port: 8081
+    port: 8081,
+    proxy: {
+      '/api': {
+        changeOrigin: true,
+        target: 'http://localhost:8080'
+      }
+    }
   },
   plugins: [
     new HtmlWebpackPlugin({ template: path.join(client, 'static/index.html') })

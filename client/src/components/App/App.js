@@ -2,11 +2,12 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Header from '../Header/Header';
+import Books from '../Books/Books';
 
 // export clean component for test use
 export function App() {
   return (
-    <div style={{ width: '1400px', margin: '0 auto' }}>
+    <div style={{ width: '100%', margin: '0 auto' }}>
       <BrowserRouter>
         <Switch>
           <Route path="/:subpage?">
@@ -14,6 +15,7 @@ export function App() {
             <Route path="/" exact><h1>Hello world!</h1></Route>
             <Route path="/about">About</Route>
             <Route path="/contact">Contact</Route>
+            <Route path="/books"><Books /></Route>
           </Route>
         </Switch>
       </BrowserRouter>
