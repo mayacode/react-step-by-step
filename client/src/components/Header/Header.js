@@ -26,9 +26,12 @@ export function Header() {
       <li>
         <NavLink style={notActiveStyle} activeStyle={activeStyle} to="/contact">Other page 2</NavLink>
       </li>
-        <li>
-            <NavLink style={notActiveStyle} activeStyle={activeStyle} to="/books">Books</NavLink>
-        </li>
+      <li>
+        <NavLink style={notActiveStyle} activeStyle={activeStyle} to="/books">Books</NavLink>
+      </li>
+      <li>
+        <NavLink style={notActiveStyle} activeStyle={activeStyle} to="/account">User Account</NavLink>
+      </li>
     </ul>
   );
 }
